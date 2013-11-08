@@ -27,10 +27,16 @@
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
+            <h1>Adtran PPM</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <div class="event received">
+                    <form name="loginForm" action="http://10.17.123.225/userapp/loginAction.html" method="post">
+                        <input type="text" id="extension" name="extension" value size="10">
+                        <input type="password" id="pin" name="pin" value size="10" maxlength="4">
+                        <input type="submit" value="Log In">
+                    </form>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
